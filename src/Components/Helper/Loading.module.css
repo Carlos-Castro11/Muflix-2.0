@@ -1,0 +1,64 @@
+.loading {
+  height: 100vh;
+  background: var(--dark-blue);
+  color: white;
+  display: flex;
+  place-content: center;
+  z-index: 99999;
+  position: fixed;
+  width: 100%;
+}
+
+.animation {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background: transparent;
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  box-shadow: 4px 0px 2px var(--green);
+  animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* .loading h1 {
+  position: relative;
+  margin-top: 13rem;
+  margin-bottom: 10px;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  color: var(--dark-blue);
+  border-bottom: 5px solid red;
+}
+
+.loading h1::before {
+  content: "CARREGANDO...";
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 0%;
+  color: var(--white);
+  display: flex;
+  z-index: 99999999;
+  overflow: hidden;
+  animation: load 1s linear infinite;
+}
+
+@keyframes load {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+} */

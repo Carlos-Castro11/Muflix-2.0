@@ -1,0 +1,6 @@
+.backgroundEdit {
+  background: var(--gray);
+  min-height: 100vh;
+  display: flex;
+  place-content: center;
+}

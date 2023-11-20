@@ -1,0 +1,167 @@
+.adminBackground {
+  background: var(--gray);
+  padding: 0.5rem;
+}
+
+.adminForm {
+  box-shadow: 0px 0px 5px white;
+  border-radius: 0.4rem;
+  padding: 2rem;
+}
+
+.adminForm {
+  color: var(--white);
+}
+
+table {
+  max-width: 100%;
+}
+
+thead {
+  text-align: left;
+  background: var(--green);
+  color: var(--dark-blue);
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  font-size: 1.2rem;
+}
+
+th {
+  font-size: 1.5rem;
+}
+
+th,
+td {
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.2rem;
+}
+
+table {
+  width: 100%;
+}
+
+.delete {
+  padding: 0.4rem;
+  background: #f31;
+  font-size: 1.1rem;
+  color: var(--white);
+  font-weight: bold;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 0.3rem;
+  box-shadow: 0px 0px 2px black;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.delete:hover,
+.delete:focus {
+  background: rgb(143, 23, 2);
+  font-weight: bold;
+  border: 2px solid #f31;
+  box-shadow: 0px 0px 5px red;
+  transition: 0.3s ease-in-out;
+}
+
+.buttons {
+  display: flex;
+  place-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.edit {
+  padding: 0.4rem;
+  display: flex;
+  background: #fb1;
+  font-size: 1.1rem;
+  color: var(--dark-blue);
+  font-weight: bold;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 0.3rem;
+  box-shadow: 0px 0px 2px black;
+  cursor: pointer;
+}
+.edit:hover,
+.edit:focus {
+  background: rgb(167, 121, 4);
+  font-weight: bold;
+  border: 2px solid #fb1;
+  box-shadow: 0px 0px 5px yellow;
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 800px) {
+  .adminForm h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  th,
+  td {
+    padding: 0.2rem;
+  }
+
+  th {
+    font-size: 1.2rem;
+  }
+
+  td {
+    font-size: 1rem;
+  }
+
+  .adminForm {
+    padding: 0.5rem;
+  }
+
+  .delete {
+    font-size: 0.9rem;
+    padding: 0.3rem;
+  }
+  .edit {
+    font-size: 0.9rem;
+    padding: 0.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .adminForm h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  th,
+  td {
+    padding: 0.2rem;
+  }
+
+  th {
+    font-size: 0.875rem;
+  }
+
+  td {
+    font-size: 0.7rem;
+  }
+
+  .adminForm {
+    padding: 0.5rem;
+  }
+
+  .delete {
+    font-size: 0.685rem;
+    padding: 0.1rem;
+  }
+  .edit {
+    font-size: 0.685rem;
+    padding: 0rem;
+  }
+  .buttons {
+    gap: 0.2rem;
+  }
+}

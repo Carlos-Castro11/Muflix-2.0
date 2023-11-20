@@ -1,0 +1,10 @@
+.notFound {
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--bg-light);
+  padding: 2rem;
+}
+
+.notFound p {
+  font-size: 2rem;
+}

@@ -1,0 +1,22 @@
+.banner {
+  height: 90vh;
+  background-image: url("../../Assets/images/bg.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+  display: grid;
+  justify-content: center;
+}
+
+.banner::after {
+  content: "";
+  height: 100%;
+  background: linear-gradient(360deg, #1d242c 0%, rgba(29, 36, 44, 0.85) 100%);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+}

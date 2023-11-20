@@ -1,0 +1,139 @@
+.header {
+  height: 5rem;
+  background-color: var(--dark-blue);
+  padding: 1rem 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  border-bottom: 1px solid var(--green);
+  z-index: 9999;
+}
+
+.nav {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.navItemDesktop {
+  position: relative;
+}
+
+.navItemDesktop::before {
+  content: "";
+  position: absolute;
+  background: var(--green);
+  width: 0%;
+  height: 1px;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+}
+
+.navItemDesktop:hover::before {
+  width: 100%;
+}
+
+.buttonMobile {
+  position: relative;
+  border: 0.125rem solid var(--green);
+  border-radius: 50%;
+  padding: 22px;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  color: var(--green);
+  cursor: pointer;
+  background-color: var(--dark-blue);
+}
+
+.buttonMobile::after {
+  content: "";
+  position: absolute;
+  background-color: currentColor;
+  height: 2px;
+  width: 1.4rem;
+  box-shadow: 0px 7px 0px currentColor, 0px -7px 0px currentColor;
+  transition: 0.2s all ease-in-out;
+}
+
+.buttonMobileActive::after {
+  transform: rotate(-90deg);
+  box-shadow: 0px 8px 0px currentColor, 0px -8px 0px currentColor;
+  transition: 0.4s all ease-in-out;
+  width: 4px;
+  height: 4px;
+  border-radius: 4rem;
+}
+
+.navMobile {
+  position: fixed;
+  background: var(--dark-blue);
+  padding: 1rem;
+  border-radius: 0.4rem;
+  display: grid;
+  gap: 10px;
+  right: 0;
+  top: 5rem;
+  border: 1px solid var(--green);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(30px);
+  transition: 0.3s;
+  font-size: 1.2rem;
+  box-shadow: 0px 0px 3px black;
+}
+
+.navMobileActive {
+  opacity: 1;
+  pointer-events: initial;
+  transform: translateX(0px);
+}
+
+.username {
+  text-transform: capitalize;
+}
+
+.navItemMobile {
+  white-space: nowrap;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.navItem a {
+  transition: 0.2s ease-in-out;
+  border-bottom: 2px solid var(--green);
+}
+
+.navItem a:hover {
+  color: var(--green);
+}
+
+.btnLogout {
+  background: var(--green);
+  border: none;
+  color: var(--dark-blue);
+  display: flex;
+  align-items: center;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+
+@media (max-width: 550px) {
+  .header {
+    padding: 1rem 4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    padding: 1rem 3rem;
+  }
+}

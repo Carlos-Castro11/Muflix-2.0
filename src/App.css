@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
+}
+
+body {
+  --type-first: "Poppins", Arial, Helvetica, sans-serif;
+  --type-second: "Ubuntu", Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--type-first);
+  margin-top: 5rem;
+  --gray: #1d242c;
+  --green: #a6c301;
+  --white: #e3e3e3;
+  --dark-blue: #0a111a;
+  --light-blue: #151c24;
+  --bg-light: #f0f1f2;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 70rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.animeLeft {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: anime 0.3s forwards;
+}
+
+.animeUp {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: anime 0.5s forwards;
+}
+
+.form {
+  display: grid;
+  place-self: center;
+  border: 1px solid var(--green);
+  padding: 2rem;
+  border-radius: 0.4rem;
+  width: 25rem;
+  backdrop-filter: blur(10px);
+  background: transparent;
+  color: var(--white);
+  overflow-x: hidden;
+  box-shadow: 0px 0px 4px black;
+  z-index: 3;
+}
+
+.titleForm {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  text-align: center;
+  font-family: var(--type-second);
+  position: relative;
+}
+
+.titleForm::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(45deg, var(--green) 10%, transparent 40%);
+  bottom: 0.2rem;
+  z-index: -1;
+}
+
+.error {
+  color: var(--white);
+  background-color: #f31;
+  white-space: nowrap;
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.4rem;
+  box-shadow: 0px 0px 2px black;
+}
+.success {
+  color: var(--white);
+  background-color: green;
+  white-space: nowrap;
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.4rem;
+  box-shadow: 0px 0px 2px black;
+}
+
+.title {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-family: var(--type-second);
+  position: relative;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(45deg, var(--green) 10%, transparent 40%);
+  bottom: 0.2rem;
+}
+
+@keyframes anime {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0.5rem;
+  }
+
+  .form {
+    width: 22rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .form {
+    padding: 1rem;
+    width: 20rem;
+  }
+}

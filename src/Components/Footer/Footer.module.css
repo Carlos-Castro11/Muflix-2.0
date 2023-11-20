@@ -1,0 +1,26 @@
+.footer {
+  background: var(--dark-blue);
+  height: 5rem;
+  padding: 1rem 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navFooter {
+  display: flex;
+  gap: 1.2rem;
+}
+
+@media (max-width: 550px) {
+  .footer {
+    padding: 1rem 4rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    padding: 1rem 3rem;
+  }
+}

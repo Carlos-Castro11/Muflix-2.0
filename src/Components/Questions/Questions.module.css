@@ -1,0 +1,21 @@
+.questions {
+  background: var(--light-blue);
+  padding: 3rem;
+  color: var(--white);
+}
+
+.questions h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 500px) {
+  .questions {
+    padding: 1rem;
+  }
+
+  .questions h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}

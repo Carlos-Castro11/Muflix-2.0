@@ -1,0 +1,32 @@
+.input {
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--green);
+  color: var(--white);
+  font-size: 1.1rem;
+  border-radius: 0.3rem;
+}
+
+.label {
+  color: var(--white);
+  margin-bottom: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.input:focus,
+.input:hover {
+  outline: none;
+  box-shadow: 0px 0px 2px var(--green);
+}
+
+.error {
+  color: rgb(255, 38, 0);
+  margin-top: 0rem;
+  font-size: 0.875rem;
+}

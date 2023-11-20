@@ -1,0 +1,7 @@
+.moviesContainer {
+  padding: 2rem;
+}
+
+.moviesSection {
+  background: var(--dark-blue);
+}

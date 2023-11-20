@@ -1,0 +1,57 @@
+.profile {
+  background: transparent;
+  padding: 2rem;
+  color: var(--white);
+  backdrop-filter: blur(5px);
+  border-radius: 0.4rem;
+  border: 2px solid var(--green);
+  margin: auto auto;
+}
+
+.profile p {
+  font-size: 1.5rem;
+  font-family: var(--type-second);
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(45deg, transparent, var(--green), transparent);
+  margin: 1rem 0rem;
+}
+
+.profile ul {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.plane {
+  background: var(--dark-blue);
+  padding: 1rem;
+  color: var(--white);
+  font-weight: bold;
+  border-radius: 0.4rem;
+  box-shadow: 0px 0px 3px white;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  border: 2px solid transparent;
+}
+
+.planeActive {
+  background: var(--green);
+  padding: 1rem;
+  color: var(--dark-blue);
+  font-weight: bold;
+  border-radius: 0.4rem;
+  box-shadow: 0px 0px 3px var(--green);
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  border: 2px solid var(--dark-blue);
+}
+
+@media (max-width: 500px) {
+  .profile {
+    padding: 1.3rem;
+  }
+}
