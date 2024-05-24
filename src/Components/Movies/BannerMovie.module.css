@@ -26,7 +26,8 @@
 }
 
 .bannerText {
-  margin: 2rem;
+  margin-left: 2rem;
+  margin-top: 10rem
   position: absolute;
   z-index: 999;
   color: var(--white);
