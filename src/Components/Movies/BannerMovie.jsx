@@ -19,13 +19,13 @@ const BannerMovie = () => {
   //   return string?.length > n ? string.substr(0, n - 1) + "..." : string;
   // }
 
+  async function fetchMovie() {
+    setLoading(true);
+    const res = await axios.get(`${BASE_URL}${Requests.fetchActionMovies}`);
+    const number = Math.floor(Math.random() * (19 - 1 + 1)) + 1;
+    setMovie(res.data.results[number]);
+  }
   React.useEffect(() => {
-    async function fetchMovie() {
-      setLoading(true);
-      const res = await axios.get(`${BASE_URL}${Requests.fetchActionMovies}`);
-      const number = Math.floor(Math.random() * (19 - 1 + 1)) + 1;
-      setMovie(res.data.results[number]);
-    }
     fetchMovie();
   }, []);
 

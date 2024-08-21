@@ -13,7 +13,7 @@ const BannerContent = () => {
         <h1>
           <span>
             <TypeAnimation
-              sequence={["Filmes", 2000, "Séries", 2000, "Documentários", 2000]}
+              sequence={["Filmes", 2000, "Séries", 2000, "Desenhos", 2000]}
               repeat={Infinity}
             />{" "}
           </span>

@@ -23,11 +23,12 @@
 .bannerMovie {
   width: 100%;
   max-height: 95vh;
+  object-fit: cover;
 }
 
 .bannerText {
   margin-left: 2rem;
-  margin-top: 10rem
+  margin-top: 10rem;
   position: absolute;
   z-index: 999;
   color: var(--white);
