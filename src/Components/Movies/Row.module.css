@@ -7,7 +7,23 @@
 }
 
 .row::-webkit-scrollbar {
-  display: none;
+  color: var(--green);
+}
+.row::-webkit-bar {
+  background-color: yellow;
+  color: blue;
+}
+
+/* Track */
+.row::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+/* Handle */
+.row::-webkit-scrollbar-thumb {
+  background:  var(--green); 
+  border-radius: 10px;
 }
 
 .hd {
@@ -35,7 +51,6 @@
 .poster {
   transform: scale(0.95);
   border-radius: 0.2rem;
-  box-shadow: 0px 0px 3px black;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   width: 100%;
@@ -51,6 +66,7 @@
   height: 350px;
   min-width: 250px;
   position: relative;
+  object-fit: cover;
 }
 
 .posterMovie::before {
@@ -132,10 +148,17 @@
   box-shadow: 0px 0px 2px var(--green);
 }
 
+@media (max-width: 850px) {
+  .posterMovie {
+    min-width: 200px;
+    height: 300px;
+  }
+}
+
 @media (max-width: 700px) {
   .posterMovie {
-    height: 300px;
-    min-width: 200px;
+    min-width: 170px;
+    height: 250px;
   }
 
   .titleRow {
@@ -145,14 +168,12 @@
 
 @media (max-width: 500px) {
   .posterMovie {
-    height: 250px;
-    min-width: 150px;
     overflow: hidden;
   }
 
   .titleRow {
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .posterContents h1 {
